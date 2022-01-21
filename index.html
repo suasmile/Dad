@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dad's 50th Bday</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+        <link rel ="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type = "text/javascript">
+            $(window).on('load',function(){
+    $(".window1").on("mouseover", function(){
+        $(this).animate({"height":"0px"}, 800, "easeOutBounce")
+        });
+
+    $(".window2").on("mouseleave", function(){
+        $(".window1").animate({"height":"300px"}, 800, "easeOutBounce");
+        });
+    
+    $(".window1").on("mouseover", function(){
+        $(".string").animate({"top":"-150px"}, 800, "easeOutBounce");
+        });
+
+    $(".window2").on("mouseleave", function(){
+        $(".string").animate({"top":"150px"}, 800, "easeOutBounce");
+        });
+    });
+        </script> 
+    </head>
+    <body>
+
+<div class="container">
+    <div class="box1">
+        <div class="h1">아빠</div>
+        <div class="p">생신 축하합니당!!</div>
+    </div>
+    <div class="background">   
+        <div class="window-all">
+            <div class="window">
+                <div class= "window1"  id="window1:active"></div>
+                <div class="window2"></div>  
+            </div>
+        </div>
+        <div class="decor">
+            <div class="Five">5</div>
+            <div class="Zero">0</div>
+            <p class="top-left">+</p>
+            <p class="top-right">+</p>
+        </div>   
+    </div>
+    <audio loop="" autoplay="" controls="" class="audiocontainer">
+		<source src="Dad singing.mp3" type="audio/mp3">
+    </audio>
+</div>
+    </body>
+</html>
